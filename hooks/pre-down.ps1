@@ -8,4 +8,4 @@ $resourceGroup = azd env get-value AZURE_RESOURCE_GROUP
 $deploymentName = azd env get-value AZURE_OPENAI_CHATGPT_DEPLOYMENT
 
 # Run the Python script with the retrieved values
-python "$scriptDir/pre-down.py" --subscription-id $subscriptionId --resource-name $resourceName --resource-group $resourceGroup --deployment-name $deploymentName
+python3 "$scriptDir/pre-down.py" --subscription-id $subscriptionId --resource-name $resourceName --resource-group $resourceGroup --deployment-name $deploymentName
