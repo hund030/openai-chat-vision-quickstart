@@ -1,6 +1,6 @@
 import argparse
 
-from azure.identity import DefaultAzureCredential
+from azure.identity import AzureDeveloperCliCredential
 from azure.mgmt.cognitiveservices import CognitiveServicesManagementClient
 
 # Set up argument parsing
@@ -12,8 +12,8 @@ parser.add_argument("--subscription-id", required=True, help="The Azure subscrip
 
 args = parser.parse_args()
 
-# Authenticate using DefaultAzureCredential
-credential = DefaultAzureCredential()
+# Authenticate using AzureDeveloperCliCredential
+credential = AzureDeveloperCliCredential()
 
 # Initialize the Cognitive Services client
 client = CognitiveServicesManagementClient(credential, subscription_id=args.subscription_id)
