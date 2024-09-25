@@ -23,5 +23,10 @@
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb"
+    },
+    "terminal.integrated.profiles.windows": {
+        "SHELL": {
+            "path": "bash"
+        }
     }
 }
